@@ -21,8 +21,8 @@ var color2_2 = 'rgb(242,201,76)';
 var color3_1 = 'rgb(106,130,251)';
 var color3_2 = 'rgb(252,92,125)';
 
-var color4_1 = 'rgb(0,0,0)';
-var color4_2 = 'rgb(10,10,10)';
+var color4_1 = 'rgb(10,10,10)';
+var color4_2 = 'rgb(35,35,35)';
 var currentColors = [];
 currentColors.push(color1_1);
 currentColors.push(color1_2);

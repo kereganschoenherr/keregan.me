@@ -151,7 +151,7 @@ h1{
     text-align: center;
     width: 80%;
     margin: 20vh auto 0px;
-    font-size: 100px;
+    
     
     
 }
@@ -167,9 +167,12 @@ h1{
     
 }
 .icon{
-    
+   
+    font-size: 100px;
    margin: 0px 0px;
+    transition: font-size 1s;
 }
+
 .skill_container{
     width: 150px;
   
@@ -270,9 +273,15 @@ li:nth-child(2){
     display: none;
 }
 #about p{
-    font-size: 18px;
-    width: 40vw;
-    margin: 200px auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+   
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 22px;
+    width: 50vw;
+  
+    line-height: 35px;
 }
 canvas{
     position: fixed;
