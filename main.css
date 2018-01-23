@@ -1,0 +1,280 @@
+body,html{
+   
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0px;
+    height: 100%;
+   overflow: hidden;
+    background: #74ebd5;  
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  
+    background: linear-gradient(to bottom right, #74ebd5, #ACB6E5); 
+    background-attachment: fixed;
+    
+    
+}
+
+  
+    
+  
+ 
+    
+
+
+#container{
+   position: absolute;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+   
+    height: 100%;
+   
+   
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#landingText{
+    
+
+   
+    
+}
+#buttons{
+    /*
+    text-align: center;
+    
+    width: 75%;
+    margin: 0px auto;
+    */
+    position: absolute;
+   
+    height: 10vh;
+    top: 70vh;
+    left: 50%;
+     
+    transform: translateX(-50%);
+    
+}
+button{
+    
+    padding: 4px 24px;
+    background: none;
+    border: solid 2px white;
+    margin: 100px 20px 150px; 
+    color: white;
+   /* font-size: 24px; */
+    font-size: 2vw;
+    
+}
+#buttonList{
+    top: calc(100vh - 225px);
+    left: 20px;
+    height: 175px;
+    width: 175px;
+   
+    position: absolute;
+    
+}
+ol{
+    list-style-type: none;
+    
+   
+}
+#buttonList li{
+    opacity: .6;
+    margin-bottom: 5px;
+    position: static;
+    font-size: 18px;
+    font-weight: 300;
+    transition: margin-left 1s;
+    cursor: pointer;
+    
+}
+li.activeButton{
+   margin-left: 20px !important;
+   opacity: 1 !important;
+    
+}
+li.activeButton:hover{
+    margin-left: 20px;
+    opacity: 1;
+}
+#buttonList li:hover{
+    margin-left: 10px;
+    opacity: 1 !important;
+}
+
+/*
+li.activeButton::before{
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    height: 2px;
+    width: 15px;
+    
+    background: white;
+    margin-right: 10px;
+   
+}
+
+*/
+h1{
+   
+    
+    margin: 30vh 0px 30px;
+    text-align: center;
+    font-weight: normal;
+   
+    z-index: 1;
+    width: 100%;
+    
+   
+   
+    
+    font-size: 5vw;
+    
+}
+
+#landingText h2{
+    font-weight: normal;
+    text-align: center;
+    font-size: 2vw;
+    
+}
+
+
+
+#skills{
+    
+   display: none;
+    text-align: center;
+    width: 80%;
+    margin: 20vh auto 0px;
+    font-size: 100px;
+    
+    
+}
+#skills p{
+    
+    font-size: 18px;
+    
+}
+#icons{
+    display: flex;
+   
+    width: 100%;
+    
+}
+.icon{
+    
+   margin: 0px 0px;
+}
+.skill_container{
+    width: 150px;
+  
+  
+    margin: 0px auto;
+    text-align: center;
+}
+#work{
+    display: none;
+    text-align: center;
+    width: 80%;
+    margin: 20vh auto 0px;
+    font-size: 100px;
+    
+}
+
+h3{
+    
+    font-size: 3vw;
+    margin-bottom: 60px;
+}
+ul{
+    
+    list-style: none;
+   
+    
+   
+     
+}
+ul li{
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    letter-spacing: 10px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: left 1s, top 1s;
+    
+}
+li:nth-child(2){
+   top: 320px;
+}
+
+.active_project{
+    top: 15%;
+    left: 350px;
+    
+}
+.active_project:nth-child(2){
+   top: 15%;
+    left:350px;
+}
+#project_bio{
+    visibility: hidden;
+    position: absolute;
+    top: 30vh;
+    left: 175px;
+    width: 500px;
+    height: 40vh;
+    
+}
+#project_bio p{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+#project_bio i{
+    white-space: nowrap;
+}
+
+#project_feature{
+    top: 50%;
+    transform:translateY(-50%);
+    width:500px;
+    height:400px;
+    background: white;
+    position: absolute;
+    right: -510px;
+    transition: all 1s ease;
+  
+    
+}
+#project_feature.active_feature{
+  
+    right: -20px;
+    
+}
+
+#project_feature img{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: -6px 8px 6px rgba(0,0,0,.3);
+}
+#about{
+    display: none;
+}
+#about p{
+    font-size: 18px;
+    width: 40vw;
+    margin: 200px auto;
+}
+canvas{
+    position: fixed;
+    opacity: .5;   
+}
