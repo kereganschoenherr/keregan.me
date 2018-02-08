@@ -188,7 +188,68 @@ h1{
     font-size: 100px;
     
 }
+#exit {
+  position: absolute;
+  left: 70px;
+  top: 7vh;
+  width: 32px;
+  height: 32px;
+  transition: transform .25s;
+    cursor: pointer;
+}
+#exit:hover {
+  opacity: 1;
+}
+#exit:before, #exit:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  background-color: white;
+}
+#exit:before {
+  transform: rotate(45deg);
+}
+#exit:after {
+  transform: rotate(-45deg);
+}
+#exit:hover{
+    transform: rotateZ(-90deg);
+}
 
+/*
+h6{
+    height: 100%;
+    border-radius: 50px;
+    margin: 0px;
+    
+    font-weight: lighter;
+     font-size: 64px;
+    transition: transform .25s;
+}
+#exit{
+    display: inline-block;
+    visibility: hidden;
+   background: blue;
+    
+    color: white;
+    position: absolute;
+    top: 6vh;
+    left:70px;
+    cursor: pointer;
+  
+    
+    
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    transition: transform .25s;
+}
+#exit:hover{
+    transform: rotateZ(-90deg);
+}
+*/
 h3{
     
     font-size: 3vw;
@@ -202,7 +263,7 @@ ul{
    
      
 }
-ul li{
+ ul li{
     top: 250px;
     left: 50%;
     transform: translateX(-50%);
@@ -210,10 +271,13 @@ ul li{
     letter-spacing: 10px;
     font-size: 32px;
     cursor: pointer;
-    transition: left 1s, top 1s;
+    transition: left 1s, top 1s, font-size .5s;
     
 }
-li:nth-child(2){
+ul li:hover{
+    font-size: 33px;
+}
+ li:nth-child(2){
    top: 320px;
 }
 
@@ -223,7 +287,7 @@ li:nth-child(2){
     
 }
 .active_project:nth-child(2){
-   top: 15%;
+    top: 15%;
     left:350px;
 }
 #project_bio{
@@ -283,7 +347,44 @@ li:nth-child(2){
   
     line-height: 35px;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+#contact{
+    width: 60%;
+    height: 22px;
+    
+    margin: calc(100vh - 250px) 40vw;
+    display: flex;
+     text-align: center;
+    
+}
+#contact a{
+   z-index: 1;
+    font-size: 18px;
+    float: left;
+    margin: 0px 20px;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted white;
+    transition: border .5s, color .5s;
+   
+}
+#contact a:hover:nth-child(1){
+   border-bottom: 1px dotted rgb(116,235,213);
+    color: rgb(116,235,213);
+}
+#contact a:hover:nth-child(2){
+   border-bottom: 1px dotted orange;
+    color: orange;
+}
+#contact a:hover:nth-child(3){
+   border-bottom: 1px dotted rgb(252,92,125);
+    color: rgb(252,92,125);
+}
 canvas{
+    z-index: 0;
     position: fixed;
     opacity: .5;   
 }

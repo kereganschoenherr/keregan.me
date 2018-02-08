@@ -115,8 +115,9 @@ function updateBio(index){
 		$('#feature_img').attr('src','images/SheridanCard.png');
 	}
 	else if(index == 1){
+		
 		$('#project_bio').html('<p>I am currently working with a small team of students to develop an educational web-based application for UConn\'s Medical Laboratory Sciences program. The goal is to create a quiz that allows students to reinforce their skills in identifying bone marrow and various blood cells based on images, and send their performance statistics to the professor. I am leading the front-end development and visual design of the project.</p><p><i>{ HTML5, CSS3, JavaScript, JQuery, Sketch }</i></p>');
-		$('#feature_img').attr('src','images/placeholder.jpg');
+		$('#feature_img').attr('src','images/Questions.jpg');
 	}
 }
 
@@ -216,7 +217,7 @@ $('#buttonList li').click(function(){
 });
 
 $('#work li').click(function(){
-
+	$('#exit').css('visibility','visible').hide().fadeIn(1000);
 	$(this).addClass('active_project');
 	$('#work li').not(this).fadeOut(500);
 	$('#work_headline').fadeOut(500);
@@ -227,6 +228,16 @@ $('#work li').click(function(){
 	$('#project_bio').css('visibility','visible').hide().fadeIn(1000);
 
 	
+
+});
+
+
+$('#exit').click(function(){
+	$(this).fadeOut(200);
+	$('#work_headline').fadeIn(500);
+	$('li').removeClass('active_project').fadeIn(500);
+	$('#project_feature').removeClass('active_feature');
+	$('#project_bio').fadeOut(500);
 
 });
 
