@@ -41,12 +41,7 @@ body,html{
     
 }
 #buttons{
-    /*
-    text-align: center;
-    
-    width: 75%;
-    margin: 0px auto;
-    */
+   
     position: absolute;
    
     height: 10vh;
@@ -105,20 +100,7 @@ li.activeButton:hover{
     opacity: 1 !important;
 }
 
-/*
-li.activeButton::before{
-    display: inline-block;
-    vertical-align: middle;
-    content: '';
-    height: 2px;
-    width: 15px;
-    
-    background: white;
-    margin-right: 10px;
-   
-}
 
-*/
 h1{
    
     
@@ -150,6 +132,7 @@ h1{
    display: none;
     text-align: center;
     width: 80%;
+    max-width: 1000px;
     margin: 20vh auto 0px;
     
     
@@ -167,10 +150,12 @@ h1{
     
 }
 .icon{
+    
    
     font-size: 100px;
    margin: 0px 0px;
-    transition: font-size 1s;
+    transition: font-size .5s;
+    cursor: pointer;
 }
 
 .skill_container{
@@ -180,6 +165,7 @@ h1{
     margin: 0px auto;
     text-align: center;
 }
+
 #work{
     display: none;
     text-align: center;
@@ -189,6 +175,7 @@ h1{
     
 }
 #exit {
+    visibility: hidden;
   position: absolute;
   left: 70px;
   top: 7vh;
@@ -218,38 +205,7 @@ h1{
     transform: rotateZ(-90deg);
 }
 
-/*
-h6{
-    height: 100%;
-    border-radius: 50px;
-    margin: 0px;
-    
-    font-weight: lighter;
-     font-size: 64px;
-    transition: transform .25s;
-}
-#exit{
-    display: inline-block;
-    visibility: hidden;
-   background: blue;
-    
-    color: white;
-    position: absolute;
-    top: 6vh;
-    left:70px;
-    cursor: pointer;
-  
-    
-    
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    transition: transform .25s;
-}
-#exit:hover{
-    transform: rotateZ(-90deg);
-}
-*/
+
 h3{
     
     font-size: 3vw;

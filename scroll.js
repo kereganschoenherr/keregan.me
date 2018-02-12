@@ -10,7 +10,7 @@ $(document).on('mousewheel',function(event){
 });
 
 
-
+var fading = false;
 
 var color1_1 = 'rgb(116,235,213)';
 var color1_2 = 'rgb(172,182,229)';
@@ -28,6 +28,7 @@ currentColors.push(color1_1);
 currentColors.push(color1_2);
 
 function updateGradient(color1,color2,target1,target2){
+	fading = true;
 
 	var splitColor1 = color1.split(',');
 	var splitColor2 = color2.split(',');
@@ -59,7 +60,7 @@ function updateGradient(color1,color2,target1,target2){
 	currentColors = [target1,target2];
 	
 	fadeGradient(r1_1,g1_1,b1_1,r1_2,g1_2,b1_2,r2_1,g2_1,b2_1,r2_2,g2_2,b2_2,target1,target2);
-	
+	fading = false;
 	return currentColors;
 
 
@@ -125,51 +126,8 @@ var currentPage = '#landingText';
 var targetPage = '';
 var activeButton = '#HomeButton';
 
-
-
-$('#btn_skills').click(function(){
-	setTimeout( function(){
-//$('body').css("background", "linear-gradient(to bottom right, #F2994A, #F2C94C)");
-//$('#landingText').hide();
-$('#work').hide();
-currentPage = '#skills';
-$('#skills').fadeIn(500);
-
-	},500);
-
-	$(currentPage).fadeOut(500);
-	
-	currentColors = updateGradient(currentColors[0],currentColors[1],color2_1,color2_2);
-	
-
-});
-$('#btn_work').click(function(){
-	setTimeout( function(){
-//$('body').css("background", "linear-gradient(to bottom right, #6A82FB 20%, #FC5C7D)");
-$('#skills').hide();
-//$('#landingText').hide();
-
-currentPage = '#work';
-$('#work').fadeIn(500);
-$('#work_headline').fadeIn(500);
-
-	},500);
-
-
-	$('li').removeClass('active_project').fadeIn(500);
-	$('#project_feature').removeClass('active_feature');
-	$('#project_bio').fadeOut(500);
-	if(currentPage != '#work'){
-	$(currentPage).fadeOut(500);
-}
-	currentColors = updateGradient(currentColors[0],currentColors[1],color3_1,color3_2);
-
-	
-
-
-});
 $('#buttonList li').click(function(){
-	
+	if(!fading){
 	if($(this).index() == 0){
 		targetPage = '#landingText';
 		currentButton = '#HomeButton';
@@ -213,6 +171,7 @@ $('#buttonList li').click(function(){
 		currentPage = targetPage;
 
 	},500);
+}
 }
 });
 
