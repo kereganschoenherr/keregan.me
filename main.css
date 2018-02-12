@@ -222,16 +222,24 @@ ul{
  ul li{
     top: 250px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1);
     position: absolute;
     letter-spacing: 10px;
     font-size: 32px;
     cursor: pointer;
-    transition: left 1s, top 1s, font-size .5s;
+    transition: left 1s, top 1s, font-size .5s, transform .5s;
+   
+    transform-origin: center;
+    
+   
+   
     
 }
 ul li:hover{
-    font-size: 33px;
+   /* font-size: 33px; */
+    transform: translateX(-50%) scale(1.05);
+     
+
 }
  li:nth-child(2){
    top: 320px;
