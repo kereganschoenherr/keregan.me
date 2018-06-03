@@ -18,6 +18,7 @@ var mouse = {
 window.addEventListener('resize',function(){
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
+	
 });
 
 window.addEventListener('mousemove',function(event){
@@ -120,7 +121,11 @@ var circleArray = [];
 var colorArray = ['#E94858','#F3A32A','#82BF6E','#3CB4CB'];
 var currentdx = Math.round(Math.random()) * 2 - 1;
 var currentdy = Math.round(Math.random()) * 2 - 1;
-var nodeCount = 80;
+//var nodeCount = 80;
+var nodeCount = Math.min(Math.floor((canvas.width / 12)),80);
+alert(nodeCount)
+
+console.log(nodeCount);
 for(i = 0; i <nodeCount; i++){
 var x = Math.random() * canvas.width; 
 var y = Math.random() * canvas.height;
