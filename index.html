@@ -1,151 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Keregan Schoenherr</title>
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114018200-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+	<title>Keregan Schoenherr | Front-end Developer</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="landing">
+		<canvas></canvas>
+		<div class="title">
+			<h1>KEREGAN</h1>
+			<h2>Front-end Developer</h2>
+		</div>
 
-  gtag('config', 'UA-114018200-2');
-</script>
 
-
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="main.css" type="text/css">
-  </head>
-  <body>
-     <canvas></canvas>
-   
-      
-  <!--  <div id="container"> -->
-      <div id="landingText" class="page">
-      <h1>Hi, I'm Keregan.</h1>
-      <h2>I'm a front-end developer and designer.
-          </h2><h2>I'm currently looking for new opportunities.</h2>
-      </div>
-        <div id="skills" class="page">
-        <h3>Here's what I know</h3>
-          <div id="icons">
-              <div class="skill_container">
-            <i class="icon fab fa-html5" title="HTML5"></i>
-              <p>HTML</p>
-              </div>
-               <div class="skill_container">
-            <i class="icon fab fa-css3-alt" title="CSS3"></i>
-                   <p>CSS</p>
-                   <p>Responsive Design</p>
-              </div>
-              <div class="skill_container">
-            <i class="icon fab fa-js" title="JavaScript"></i>
-                  <p>JavaScript</p>
-                  <p>JQuery</p>
-              </div>
-              <div class="skill_container">
-            <i class="icon fab fa-python" title="Python"></i>
-                  <p>Python</p>
-                  
-              </div>
-              <div class="skill_container">
-            <i class="icon fab fa-git" title="git"></i>
-              <p>Git</p>
-              </div>
-               <div class="skill_container">
-              <i class="icon fas fa-pencil-alt" title="tools"></i>
-                   <p>Photoshop</p>
-                   <p>Illustrator</p>
-                   <p>Sketch</p>
-                   
-                   
-              </div>
-              
-              
-          </div>
-        </div>
-        <div id="work" class="page">
-        <h3 id="work_headline">Here's what I've done</h3>
-            
-        <ul>
-            
-            <li>Sheridan Interiors</li>
-            <li>UConn HEMA App</li>
-            </ul>
-            
-             <div id="project_bio">
-                 
-               
-            
-            </div>
-            
-               <div id="project_feature">
-                   <a href="https://sheridaninteriors.com/">
-                <img id="feature_img">
-                   </a>
-                
-            </div>
-        
-        
-            <div id="exit"></div>
-        
-        </div>
-      
-      <div id="about" class="page">
-      
-          <p>Hi, I'm Keregan Schoenherr. I'm a recent graduate from the University of Connecticut with a degree in Computer Science and Digital Arts. I work to create clean, fluid interfaces. If you're working on a project, I'd love to get in touch.</p>
-      
-          <div id="contact">
-          
-              <a href="mailto:kereganschoenherr@gmail.com">Email</a>
-              <a href="https://www.linkedin.com/in/kereganschoenherr/">LinkedIn</a>
-              <a href="https://github.com/kereganschoenherr">Github</a>
-          </div>
-         
-     
-      </div>
-      <div id="buttonList">
-        <ol>
-            <li id='HomeButton' class='activeButton'>Home</li>
-            <li id='SkillsButton'>Skills</li>
-            <li id='WorkButton'>Work</li>
-            <li id='AboutButton'>About</li>
-           <!-- <li id='ContactButton'>Contact</li> -->
-          
-        </ol>
-      
-      
-      
-      </div>
-      
-      
-      <!--
-      <div id="buttons">
-      <button id="btn_skills" class="switch">Skills</button>
-        <button id="btn_work" class="switch">Portfolio</button>
-        
-        </div>
-        
-        
-        
-        -->
-       
-      
-     <!-- </div> -->
-      
-   <!-- <div class="shutter"></div> -->
-     
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script type="text/javascript" src="lines.js"></script>
-          
-          <script type="text/javascript" src="scroll.js">
-      </script>
-      
-     
-  </body>
-    
-    
+	</div>
+	<div class="about">
+		<p>Hi, I'm Keregan Schoenherr. I'm a developer and designer currently living in Norwalk, Connecticut. I am deeply passionate about making the web more accessible for everyone.</p>
+			<p>Right now, I'm reading <a href="https://abookapart.com/products/responsive-web-design">Responsive Web Design</a> by <span>Ethan Marcotte</span>.</p>
+	</div>
+	<div class="work">
+		<h3>Work</h3>
+		<div class="project">
+			<div class="description">
+				<h4><a href="http://coloux.keregan.me/">Coloux</a></h4>
+				<p>The internet should be for everyone. Coloux is a color contrast tool designed to check text readability for people with low vision.</p>
+			</div>
+			<div class="container">
+				<a href="http://coloux.keregan.me/">
+					<img src="images/coloux.png" alt="Coloux">
+				</a>
+			</div>
+		</div>
+		<div class="project">
+			<div class="description">
+				<h4><a href="http://sheridaninteriors.com/">Sheridan Interiors</a></h4>
+				<p>Redesigned website for local design studio from the ground up to showcase their recent work.</p>
+			</div>
+			<div class="container">
+				<a href="http://sheridaninteriors.com/" alt="Sheridan Interiors">
+					<img src="images/sheridan.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="contact">
+		<h2>Get in Touch</h2>
+		<p>I'm always on the lookout for new projects and opportunities. Feel free to reach out via <a href="mailto:kereganschoenherr@gmail.com">email</a> or <a href="https://www.linkedin.com/in/kereganschoenherr/">linkedIn</a>.</p>
+	</div>
+	<!-- <div class="footer">
+		<p>© Keregan Schoenherr 2019</p>
+	</div> -->
+</body>
+ <script type="text/javascript" src="main.js"></script>
 </html>
